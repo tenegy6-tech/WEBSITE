@@ -718,3 +718,10 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--accent);
 }
+.hero__feature {
+    display: flex;              /* ← ОБЯЗАТЕЛЬНО */
+    align-items: center;
+    text-decoration: none;      /* убираем подчёркивание */
+    cursor: pointer;
+    color: var(--text-medium);  /* чтобы текст не стал синим */
+}
