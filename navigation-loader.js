@@ -10,6 +10,7 @@ class NavigationLoader {
         if (path.includes('criteria.html')) return 'criteria';
         if (path.includes('obrazcy.html')) return 'obrazcy';
         if (path.includes('books.html')) return 'books';
+        if (path.includes('criteria.html')) return 'criteria';
         return 'index';
     }
 
@@ -61,9 +62,9 @@ class NavigationLoader {
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="razdel.html" class="nav__link ${this.currentPage === 'razdel' ? 'active' : ''}">
-                                <span class="nav__link-icon">📚</span>
-                                Разделы
+                            <a href="structure.html" class="nav__link ${this.currentPage === 'criteria' ? 'active' : ''}">
+                                <span class="nav__link-icon">📑</span>
+                                Структура
                             </a>
                         </li>
                         <li class="nav__item">
@@ -78,15 +79,22 @@ class NavigationLoader {
                                 Образцы
                             </a>
                         </li>
+
                         <li class="nav__item">
                             <a href="books.html" class="nav__link ${this.currentPage === 'books' ? 'active' : ''}">
                                 <span class="nav__link-icon">📖</span>
                                 Список литературы
                             </a>
                         </li>
+                        <li class="nav__item">
+                            <a href="razdel.html" class="nav__link ${this.currentPage === 'razdel' ? 'active' : ''}">
+                                <span class="nav__link-icon">📚</span>
+                                Разделы
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                
+                        
                 <div class="nav__footer">
                     <a href="about.html" class="nav__footer-link">О сайте</a>
                     <a href="creators.html" class="nav__footer-link">О создателях</a>

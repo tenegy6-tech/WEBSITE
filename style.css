@@ -725,3 +725,25 @@ body {
     cursor: pointer;
     color: var(--text-medium);  /* чтобы текст не стал синим */
 }
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  text-decoration: none;
+}
+.button:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 3px;
+}
