@@ -49,7 +49,7 @@ class NavigationLoader {
         const fallbackNav = `
             <nav class="nav">
                 <div class="nav__header">
-                    <h1 class="nav__title">TvoeSochinenie.ru</h1>
+                    <h1 class="nav__title">TwoeSochinenie.ru</h1>
                     <p class="nav__subtitle">Навигатор</p>
                 </div>
                 
@@ -97,7 +97,6 @@ class NavigationLoader {
                         
                 <div class="nav__footer">
                     <a href="about.html" class="nav__footer-link">О сайте</a>
-                    <a href="creators.html" class="nav__footer-link">О создателях</a>
                 </div>
             </nav>
         `;
