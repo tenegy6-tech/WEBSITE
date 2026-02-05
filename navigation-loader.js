@@ -7,7 +7,7 @@ class NavigationLoader {
     getCurrentPage() {
         const path = window.location.pathname;
         if (path.includes('razdel.html')) return 'razdel';
-        if (path.includes('criteria.html')) return 'criteria';
+        if (path.includes('structure.html')) return 'structure';
         if (path.includes('obrazcy.html')) return 'obrazcy';
         if (path.includes('books.html')) return 'books';
         if (path.includes('criteria.html')) return 'criteria';
@@ -49,7 +49,7 @@ class NavigationLoader {
         const fallbackNav = `
             <nav class="nav">
                 <div class="nav__header">
-                    <h1 class="nav__title">TvoeSochinenie.ru</h1>
+                    <h1 class="nav__title">TwoeSochinenie.ru</h1>
                     <p class="nav__subtitle">Навигатор</p>
                 </div>
                 
@@ -62,7 +62,7 @@ class NavigationLoader {
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="structure.html" class="nav__link ${this.currentPage === 'criteria' ? 'active' : ''}">
+                            <a href="structure.html" class="nav__link ${this.currentPage === 'structure' ? 'active' : ''}">
                                 <span class="nav__link-icon">📑</span>
                                 Структура
                             </a>
@@ -97,7 +97,6 @@ class NavigationLoader {
                         
                 <div class="nav__footer">
                     <a href="about.html" class="nav__footer-link">О сайте</a>
-                    <a href="creators.html" class="nav__footer-link">О создателях</a>
                 </div>
             </nav>
         `;
